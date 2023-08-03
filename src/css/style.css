@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap');
+
+:root {
+    --fonte_titulo: 'Tektur', cursive;
+    --fonte_destaque: 'Comic Sans', cursive;
+    --fonte_normal: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #820501, #d40e04, #fd1205);
+    font-family: var(--fonte_normal);
+}
+
+header {
+    font-family: var(--fonte_titulo);
+    color: #f3eded;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    width: 60%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #0000007a;
+}
+
+div.detectar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: var(--fonte_titulo);
+    justify-content: center;
+}
+
+input {
+    font-family: var(--fonte_destaque);
+}
+
+input#txtano {
+    border: 1px solid rgb(78, 77, 77);
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+input#botaoConcluir {
+    border: none;
+    border-radius: 10px;
+    padding: 3px 5px;
+    color: #ffffff;
+    background-color: #820501;
+}
+
+#botaoConcluir:hover {
+    background-color: #c9110b;
+    transition: 0.25s;
+}
+
+#botaoConcluir:active {
+    background-color: #ff4646;
+}
+
+input::placeholder{
+    font-family: var(--fonte_destaque);
+    color: rgba(255, 255, 255, 0.733);
+}
+
+img {
+    /* height: 400px; */
+    width: 400px;
+    border-radius: 100%;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    margin-top: 10px;
+    font-family: var(--fonte_destaque);
+    color: #ffffff;
+}

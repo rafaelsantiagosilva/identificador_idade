@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="shortcut icon" href="./src/img/favicon.ico" type="image/x-icon"> <!-- "https://www.flaticon.com/br/icones-gratis/calendario" title="calendário ícones"-->
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+
+    <main>
+        <form action="get">
+            <p>
+                Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+
+            <p>Sexo:
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <input id="botaoConcluir" type="button" value="Concluir" onclick="concluir()">
+        </form>
+
+        <div class="detectar">
+            <h2 id="res">Preencha os campos</h2>
+            <img src="" alt="">
+        </div>
+    </main>
+
+    <footer>
+        📆Criado por Rafael Santiago, para fins de aprendizagem📆
+    </footer>
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
